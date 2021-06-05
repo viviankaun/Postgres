@@ -2,7 +2,10 @@
  
 
 1. sql_queries.py :  We should read raw data first, then we have a business logical idea to design data modeling. 
-    (A) Avoid error:  If there is a  duplicate key,  the Do nothing -> ON CONFLICT (song_id) DO NOTHING;
+    (A) Avoid error: 
+         -If there is a  duplicate key,  the Do nothing -> ON CONFLICT (song_id) DO NOTHING;
+         -If user_id is duplicate, example  updlate   the level of the user to paid  --> ON CONFLICT (user_id) DO UPDATE SET level=EXCLUDED.level
+    
     
 2. etl.py :  
     (A) songplays table :  "songplay_id" column is SERIAL PRIMARY KEY. It is auto increment primary key.  
@@ -15,7 +18,10 @@
     (A) Console : !python etl.py -->Run 
     (B) _.ipynb : Run by line or block
     
-4.  if there is another connection on database, How do i deal it ?
+4.  If there is another connection on database, How do i deal it ?
     (A) run coon.close()
     (b) restart kernel 
     (c) shout down all kernels
+
+5. (A) clocstring : we can make mutile command  between two  the triple quotation marks   ''' xxxxxxxx '''
+   (B) In-line comments:
