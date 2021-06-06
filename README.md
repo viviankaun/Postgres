@@ -27,3 +27,10 @@
 3. How do I write comments in Python
     * clocstring : we can make mutile comments between two  the triple quotation marks   ''' xxxxxxxx '''
     * In-line comments: we use the hash symbol # to write a single-line comment.    #xxxxx
+
+# Files in repository:
+1. data folder: The metadata files written in JSON format.
+2. create_tables.py: we can run this file to create table. It is realted to sql_queries.py
+3. sql_queries: It is included SQL scripts which contains data schedume. 
+4. etl.py: Import data into tables. 
+5. etl.ipynb: Import data into tables. You can run by lines or blocks.
