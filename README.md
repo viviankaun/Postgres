@@ -5,6 +5,8 @@
     (A). Avoid error: 
          1.If there is a  duplicate key,  the Do nothing -> ON CONFLICT (song_id) DO NOTHING;
          1.If user_id is duplicate, example  updlate   the level of the user to paid  --> ON CONFLICT (user_id) DO UPDATE SET level=EXCLUDED.level
+         1. Item 3a
+         1. Item 3b
     
     
 12. etl.py :  
