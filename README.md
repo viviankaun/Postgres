@@ -2,9 +2,9 @@
 # Files I updated:
 
 1. sql_queries.py :  We should read raw data first, then we have a business logical idea to design data modeling. 
-    (A). How to avoid error: 
-         * If there is a  duplicate key,  the Do nothing -> ON CONFLICT (song_id) DO NOTHING;
-         * If user_id is duplicate, example  updlate   the level of the user to paid  --> ON CONFLICT (user_id) DO UPDATE SET level=EXCLUDED.level
+    * How to avoid error: 
+     * If there is a  duplicate key,  the Do nothing -> ON CONFLICT (song_id) DO NOTHING;
+     * If user_id is duplicate, example  updlate   the level of the user to paid  --> ON CONFLICT (user_id) DO UPDATE SET level=EXCLUDED.level
          
     
     
