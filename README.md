@@ -1,10 +1,10 @@
 
-# Files I updated
+# Files I updated:
 
-11. sql_queries.py :  We should read raw data first, then we have a business logical idea to design data modeling. 
-    (A) Avoid error: 
-         -If there is a  duplicate key,  the Do nothing -> ON CONFLICT (song_id) DO NOTHING;
-         -If user_id is duplicate, example  updlate   the level of the user to paid  --> ON CONFLICT (user_id) DO UPDATE SET level=EXCLUDED.level
+1. sql_queries.py :  We should read raw data first, then we have a business logical idea to design data modeling. 
+    (A). Avoid error: 
+         1.If there is a  duplicate key,  the Do nothing -> ON CONFLICT (song_id) DO NOTHING;
+         1.If user_id is duplicate, example  updlate   the level of the user to paid  --> ON CONFLICT (user_id) DO UPDATE SET level=EXCLUDED.level
     
     
 12. etl.py :  
@@ -15,11 +15,11 @@
 # Import thing to know from this session 
 
     
-3. How do I run python: 
+>. How do I run python: 
     (A) Console : !python etl.py -->Run 
     (B) _.ipynb : Run by line or block
     
-4.  If there is another connection on database, How do i deal it ?
+.  If there is another connection on database, How do i deal it ?
     (A) run coon.close()
     (b) restart kernel 
     (c) shout down all kernels
