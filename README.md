@@ -24,5 +24,6 @@
     * restart kernel 
     * shout down all kernels
 
-3. * clocstring : we can make mutile command  between two  the triple quotation marks   ''' xxxxxxxx '''
-   * In-line comments:
+3. How do I write comments in Python
+    * clocstring : we can make mutile comments between two  the triple quotation marks   ''' xxxxxxxx '''
+    * In-line comments: we use the hash symbol # to write a single-line comment.    #xxxxx
