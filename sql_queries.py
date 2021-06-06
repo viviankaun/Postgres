@@ -10,11 +10,11 @@ time_table_drop = " drop table if exists  time ;"
 
 songplay_table_create = (""" create table songplays  ( 
     songplay_id  SERIAL PRIMARY KEY,
-    start_time  timestamp NOT NULL FOREIGN KEY REFERENCES time(start_time),
-    user_id varchar(255) FOREIGN KEY REFERENCES users(user_id),
+    start_time  timestamp NOT NULL ,
+    user_id varchar(255)  ,
     level  varchar(10),
-    song_id VARCHAR(255) FOREIGN KEY REFERENCES songs(song_id),
-    artist_id VARCHAR(255) FOREIGN KEY REFERENCES artists(artist_id),
+    song_id VARCHAR(255)  ,
+    artist_id VARCHAR(255) ,
     session_id int, 
     location varchar(255),
     user_agent varchar(255) 
